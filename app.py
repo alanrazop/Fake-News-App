@@ -33,10 +33,10 @@ if st.button("Analizar"):
             prediction = (prob >= 0.5).astype(int)
             label = label_encoder.inverse_transform([prediction])[0]
 
-            if label == "real":
-                st.success(f"✅ Esta noticia parece **VERDADERA** (probabilidad: {prob:.2f})")
-            else:
-                st.error(f"⚠️ Esta noticia parece **FALSA** (probabilidad: {prob:.2f})")
+            #if label == "real":
+               # st.success(f"✅ Esta noticia parece **VERDADERA** (probabilidad: {prob:.2f})")
+            #else:
+                #st.error(f"⚠️ Esta noticia parece **FALSA** (probabilidad: {prob:.2f})")
 
             print(f"Probabilidad de ser Real: {prob:.4f}")
             print(f"Predicción: {'Verdadero' if label == 'real' else 'Falso'}")
