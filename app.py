@@ -40,7 +40,7 @@ if st.button("Analizar"):
 
             print(f"Probabilidad de ser Real: {prob:.4f}")
             print(f"Predicción: {'Verdadero' if label == 'real' else 'Falso'}")
-            return label
+            print(label)
 
         except Exception as e:
             st.error(f"Ocurrió un error: {str(e)}")
