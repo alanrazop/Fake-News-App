@@ -35,9 +35,12 @@ if st.button("Analizar"):
 
             if label == "real":
                 st.success(f"✅ Esta noticia parece **VERDADERA** (probabilidad: {prob:.2f})")
-                return label
             else:
                 st.error(f"⚠️ Esta noticia parece **FALSA** (probabilidad: {prob:.2f})")
+
+            print(f"Probabilidad de ser Real: {prob:.4f}")
+            print(f"Predicción: {'Verdadero' if label == 'real' else 'Falso'}")
+            return label
 
         except Exception as e:
             st.error(f"Ocurrió un error: {str(e)}")
