@@ -30,7 +30,7 @@ if st.button("Analizar"):
         try:
             processed = preprocess_text_for_prediction(user_input, vectorizer, scaler)
             prob = model.predict(processed).flatten()[0]
-            prediction = (prob >= 0.3).astype(int)
+            prediction = (prob >= 0.5).astype(int)
             label = label_encoder.inverse_transform([prediction])[0]
 
             if label == "real":
