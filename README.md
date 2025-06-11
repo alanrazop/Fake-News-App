@@ -1,4 +1,4 @@
-# 📰 Fake News Detector
+# 📰 Detector de noticias falsas (en inglés) 
 
 Este proyecto clasifica noticias como **verdaderas o falsas** usando un modelo de Machine Learning entrenado en textos.
 
