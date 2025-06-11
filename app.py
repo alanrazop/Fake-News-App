@@ -7,7 +7,7 @@ from utils.preprocessing import preprocess_text_for_prediction
 # Configuración inicial
 st.set_page_config(page_title="Detector de Fake News", layout="centered")
 st.title("📰 Detección de Noticias Falsas")
-st.subheader("Clasificador de noticias usando Machine Learning")
+st.subheader("Clasificador de noticias (en inglés) usando Machine Learning")
 
 # Cargar modelo y transformadores
 @st.cache_resource
